@@ -7,4 +7,6 @@
   tasks:
     - name: Echo text
       shell: 'echo "Bienvenue"'
-      register: binary_file
+      register: text
+    - debug:
+        msg: "{{ text }}"
