@@ -6,7 +6,7 @@
   gather_facts: False    
   tasks:
     - name: Echo text
-      shell: 'echo "Bienvenue"'
+      shell: 'echo "{{ greet }}"'
       register: response
     - debug:
         var: response
