@@ -7,6 +7,6 @@
   tasks:
     - name: Echo text
       shell: 'echo "Bienvenue"'
-      register: text
+      register: response
     - debug:
-        msg: "{{ text }}"
+        var: response
